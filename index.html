@@ -1,47 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results Summary Component</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="./build/css/style.css" />
+  </head>
+  <body>
+    <main class="min-h-screen text-white max-w-screen-sm mx-auto text-lg">
+      <!-- Results Section -->
+      <section class="pt-8 pb-10 px-16 text-center text-white text-opacity-70 rounded-b-[2rem] bg-gradient-to-t from-lightRoyalBlue to-lightSlateBlue">
+        <h1 class="mb-6 font-medium">Your Result</h1>
+        <div class="flex justify-center items-center mb-8">
+          <span class="text-white w-36 h-36 rounded-full flex flex-col justify-center items-center bg-gradient-to-b from-violetBlue to-[hsla(241, 72%, 46%, 1)]">
+            <p class="text-6xl font-extrabold">76</p>
+            <p class="text-base text-white text-opacity-50 leading-8">of 100</p>
+          </span>
+        </div>
+        <p class="text-2xl text-white font-bold mb-2">Great</p>
+        <p class="leading-snug text-base">
+          You scored higher than 65% of the <br />
+          people who have taken these tests.
+        </p>
+      </section>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <!-- Summary Section -->
+      <section class="px-8">
+        <h1 class="text-darkGreyBlue font-extrabold py-6">Summary</h1>
+        <!-- Reaction Summary -->
+        <div class="bg-lightRed bg-opacity-20 flex justify-between items-center">
+          <span class="flex justify-between items-center gap-5">
+            <img src="./assets/images/icon-reaction.svg" alt="" />
+            <p class="text-lightRed">Reaction</p>
+          </span>
+          <p class="text-darkGreyBlue">
+            <span>80</span>
+            <span class="opacity-50"> / 100</span>
+          </p>
+        </div>
 
-  Your Result
-  76
-  of 100
+        <!-- Memory Summary -->
+        <div class="bg-orangeyYellow bg-opacity-15 flex justify-between items-center">
+          <span class="flex justify-center items-center gap-5">
+            <img src="./assets/images/icon-memory.svg" alt="" />
+            <p class="text-orangeyYellow">Memory</p>
+          </span>
+          <p class="text-darkGreyBlue">
+            <span>92</span>
+            <span class="opacity-50"> / 100</span>
+          </p>
+        </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+        <!-- Verbal Summary -->
+        <div class="bg-greenTeal bg-opacity-10 flex justify-between items-center">
+          <span class="flex justify-center items-center gap-5">
+            <img src="./assets/images/icon-verbal.svg" alt="" />
+            <p class="text-greenTeal">Verbal</p>
+          </span>
+          <p class="text-darkGreyBlue">
+            <span>61</span>
+            <span class="opacity-50"> / 100</span>
+          </p>
+        </div>
 
-  Reaction
-  80 / 100
+        <!-- Visual Summary -->
+        <div class="bg-cobaltBlue bg-opacity-10 flex justify-between items-center">
+          <span class="flex justify-center items-center gap-5">
+            <img src="./assets/images/icon-visual.svg" alt="" />
+            <p class="text-cobaltBlue">Visual</p>
+          </span>
+          <p class="text-darkGreyBlue">
+            <span>72</span>
+            <span class="opacity-50"> / 100</span>
+          </p>
+        </div>
 
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <!-- Button -->
+        <div class="flex justify-center items-center">
+          <button class="w-full bg-darkGreyBlue leading-none py-4 px-8 border-0 rounded-[100vw] cursor-pointer hover:bg-gradient-to-b focus-visible:bg-gradient-to-b from-violetBlue to-lightRoyalBlue">
+            Continue
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="absolute bottom-4 left-0 right-0 flex justify-center">
+      <div class="attribution">
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor
+          </a>
+          . Coded by <a href="#">Njoroge Jeff</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
